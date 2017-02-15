@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
 import fetch from 'isomorphic-fetch';
 require('es6-promise').polyfill();
 
 export default class extends React.Component {
   static async getInitialProps ({ req }) {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users')
-    const users = await res.json()
-
-    return { users }
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await res.json();
+    return { users };
   }
 
   render () {
@@ -19,5 +18,5 @@ export default class extends React.Component {
 }
 
 function renderUsers(users) {
-  return users.map(u => (<div>{ u.name }</div>))
+  return users.map(u => (<div>{ u.name }</div>));
 }
