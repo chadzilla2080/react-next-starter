@@ -1,6 +1,9 @@
 import React from 'react';
 import fetch from 'isomorphic-fetch';
 require('es6-promise').polyfill();
+import Layout from '../components/layout';
+
+const renderUsers = (users) => users.map((u, i) => (<div key={i}>{ u.name }</div>));
 
 export default class extends React.Component {
   static async getInitialProps ({ req }) {
@@ -11,12 +14,13 @@ export default class extends React.Component {
 
   render () {
     const { users } = this.props;
-    return <div>
-      { renderUsers(users) }
-    </div>
+    return (
+      <Layout title="users">
+        <h1 className="users-header">Users</h1>
+        <div>
+          { renderUsers(users) }
+        </div>
+      </Layout>
+      )
   }
-}
-
-function renderUsers(users) {
-  return users.map(u => (<div>{ u.name }</div>));
 }
