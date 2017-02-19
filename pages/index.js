@@ -15,4 +15,4 @@ export default() => {
       <div className="violet">violet</div>
     </Layout>
   );
-}
+};

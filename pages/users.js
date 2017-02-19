@@ -21,6 +21,6 @@ export default class extends React.Component {
           { renderUsers(users) }
         </div>
       </Layout>
-      )
+      );
   }
 }
