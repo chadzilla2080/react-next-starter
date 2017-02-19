@@ -1,22 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
+import Layout from '../components/layout';
 
 export default() => {
-    return (
-      <div className="hello">Hello World. 
-        <Link href='/users'><a>Users</a></Link>
-        <style jsx>{`
-          .hello {
-            font: 15px Helvetica, Arial, sans-serif;
-            background: #eee;
-            padding: 100px;
-            text-align: center;
-            transition: 100ms ease-in background;
-          }
-          .hello:hover {
-            background: #ccc;
-          }
-        `}</style>
-      </div>
-      );
-  }
+  return (
+    <Layout title="home">
+      <h1 className="home-header">Home</h1>
+      <div className="red">red</div>
+      <div className="orange">orange</div>
+      <div className="yellow">yellow</div>
+      <div className="green">green</div>
+      <div className="blue">blue</div>
+      <div className="indigo">indigo</div>
+      <div className="violet">violet</div>
+    </Layout>
+  );
+}
