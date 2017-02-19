@@ -4,7 +4,7 @@ This project also uses [Next.js](https://github.com/zeit/next.js) to perform ser
 for managing assets, processing css, and routing between components.
 
 ### Commands
-* `npm start`
-* `npm run dev`
-* `npm run build`
-* `npm run test`
+* `yarn dev`
+* `yarn build`
+* `yarn start`
+* `yarn test`
