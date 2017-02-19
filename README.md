@@ -4,6 +4,8 @@ This project also uses [Next.js](https://github.com/zeit/next.js) to perform ser
 for managing assets, processing css, and routing between components.
 
 ### Commands
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/minstarter/react-next-starter.svg)](https://greenkeeper.io/)
 * `yarn dev`
 * `yarn build`
 * `yarn start`
