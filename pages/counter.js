@@ -1,8 +1,8 @@
 import React from 'react';
-import { store } from '../store';
+import { store } from '../redux/store';
 import { Counter } from '../components/Counter';
-import { addNewCounter, removeCounter, incrementCounter, decrementCounter } from '../actions/counterActions';
-import { connectWithStore } from '../utils';
+import { addNewCounter, removeCounter, incrementCounter, decrementCounter } from '../redux/actions/counterActions';
+import { connectWithStore } from '../redux/utils';
 import Layout from '../components/layout';
 
 class CounterContainer extends React.Component {
