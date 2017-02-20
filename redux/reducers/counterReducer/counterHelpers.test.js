@@ -1,4 +1,4 @@
-import { addCounter, removeCounter, incrementCounter, decrementCounter } from './CounterHelpers';
+import { addCounter, removeCounter, incrementCounter, decrementCounter } from './counterHelpers';
 
 it('adds a counter', () => {
   const counters = [];

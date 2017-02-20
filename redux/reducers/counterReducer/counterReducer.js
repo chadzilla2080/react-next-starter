@@ -1,5 +1,5 @@
-import { ADD_COUNTER, REMOVE_COUNTER, INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/actionTypes';
-import { addCounter, removeCounter, incrementCounter, decrementCounter } from './helpers/CounterHelpers';
+import { ADD_COUNTER, REMOVE_COUNTER, INCREMENT_COUNTER, DECREMENT_COUNTER } from '../../constants/actionTypes';
+import { addCounter, removeCounter, incrementCounter, decrementCounter } from './counterHelpers';
 
 export const counterReducer = (state = [], action) => {
   switch (action.type) {
