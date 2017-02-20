@@ -16,7 +16,8 @@ export default ({ children, title = 'This is the default title' }) => (
       <nav>
         <Link href='/'><a>Home</a></Link> |
         <Link href='/logo'><a>Logo</a></Link> |
-        <Link href='/users'><a>Users</a></Link>
+        <Link href='/users'><a>Users</a></Link> |
+        <Link href='/counter'><a>Counter</a></Link>
       </nav>
     </header>
 
