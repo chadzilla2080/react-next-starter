@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import Layout from '../components/layout';
 
@@ -15,4 +14,4 @@ export default() => {
       <div className="violet">violet</div>
     </Layout>
   );
-}
+};
